@@ -1,66 +1,68 @@
 
 						...............
-						.							.
-						.		JSON			. 
-						.							.
+						.	      .
+						.    JSON     . 
+						.	      .
 						...............
 									
-									||
-									\/
+							||
+							\/
 
 						...............
-						.							.
-						.		KEY   		. 
-						.		NUMBER		.
+						.	      .
+						.   KEY       . 
+						.   NUMBER    .
 						...............
 									
-									||
-									\/
+							||
+							\/
 
 						...............
-						.							.
-						.	KEY NAMES		. 
-						.		    			.
+						.	      .
+						.  KEY NAMES  . 
+						.   	      .
 						...............
 									
-									||
-									\/
+							||
+							\/
 
 						...............
-						.							.
-						.	EMPTY KEYS	. 
-						.							.
+						.	      .
+						. EMPTY KEYS  . 
+						.	      .
 						...............
 									
-									||
-									\/
+							||
+							\/
 
 						...............
-						.							.
-						.	MULTIPLE    .
-						. RECORD	    . 
-						.	SAME ID			.
+						.             .
+						. MULTIPLE    .
+						. RECORD      . 
+						.  SAME ID    .
 						...............
 									
-									||
-									\/
+							||
+							\/
 
 						...............
-						.							.
-						.	MULTIPLE    .
-						. RECORD	    . 
-						.	EXACT MATCH	.
+						.	      .
+						.  MULTIPLE   .
+						.   RECORD    . 
+						.EXACT MATCH  .
 						...............
 									
-									||
-									\/
+							||
+							\/
 
 						...............
-						.	AUTHOR MATCH. 
-						.	   FROM     .        
+						. AUTHOR MATCH. 
+						.    FROM     .        
 						. VALID LIST  . 
 						...............
 
+
+======================================================================================================
 
 ['Blocker', 'Source should be in JSON format'],
 	* This is a "Blocker" case. If it is not satisfied, we can not proceed other cases
