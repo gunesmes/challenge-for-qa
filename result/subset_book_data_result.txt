@@ -1,0 +1,67 @@
+
+
+Test Case 1: Books should have 3 keys
+ Severity: Major
+ Number of Failed Records: 2
+Recorded Data: 
+ [{u'id': u'00012037-104c-48ff-9d18-5da9690ee749', u'name': u'Towhead Uncomplainingly'}, {u'author': u'990f01fe-572f-4b5e-8ac7-655e5a80d43f', u'id': u'00021a14-cf6b-464a-ba10-19e30bb90c6b', u'author2': u'990f01fe-572f-4b5e-8ac7-655e5a80d43f', u'name': u'Centrisciform Unicursality'}]
+
+Test Case 2: Books should have following keys: author, id, name
+ Severity: Major
+ Number of Failed Records: 3
+Recorded Data: 
+ [{u'author': u'a1be8348-5bc7-4425-9b63-6048168fee4c', u'ids': u'0004fec4-7804-4475-a6b3-96112a4669a7', u'name': u'Music Ilioinguinal'}, {u'author': u'70bcb07a-be03-488f-a650-58b67be89b46', u'id': u'0006e804-fa4d-4c4b-b9a2-ba2be00bc87b', u'names': u'Tinoceras Bootlegging'}, {u'authors': u'3190c5bb-ee76-45ae-b3b7-a660b406c132', u'id': u'0008748a-0421-4feb-a5ab-9900a68eb2ff', u'name': u'Soc Animally'}]
+
+Test Case 3: Books should have following keys: author, id, name not empty
+ Severity: Major
+ Number of Failed Records: 3
+Recorded Data: 
+ [{u'author': u'96b04a78-ca22-48f3-8719-f63eb07161ae', u'id': u'', u'name': u'Inspiratory Scotism'}, {u'author': u'13badc7d-2270-4bbc-95d2-13b8fd71f419', u'id': u'000be385-60c7-4d83-8d76-2e5ede670b09', u'name': u''}, {u'author': u'', u'id': u'001022f5-59fa-46f1-ac98-ed0bad2c89aa', u'name': u'Ziamet Tobyman'}]
+
+Test Case 4: There should be no duplicated book records with same id but different content
+ Severity: Minor
+ Number of Failed Records: 1
+Recorded Data: 
+ [{u'author': u'52f137c5-80f7-4219-b288-20ab008e3317', u'id': u'00138606-2dde-4341-9f9d-30d17df8acbf', u'name': u'Mesut Gunes'}]
+
+Test Case 5: There should be no duplicated book records with same id and same content
+ Severity: Minor
+ Number of Failed Records: 1
+Recorded Data: 
+ [{u'author': u'0438264d-25df-49f0-a0db-d376cbb62798', u'id': u'001a7ddd-f5d2-4bcc-af64-9adbbf0db96d', u'name': u'Primevrin Monterey'}]
+
+Test Case 6: Author should have 2 keys
+ Severity: Major
+ Number of Failed Records: 2
+Recorded Data: 
+ [{u'id': u'5dfc9791-cde6-4e2b-b7d6-02ac1814a63c'}, {u'name2': u'Argilloferruginous Kolo', u'id': u'990f01fe-572f-4b5e-8ac7-655e5a80d43f', u'name': u'Argilloferruginous Kolo'}]
+
+Test Case 7: Author should have following keys: id, name
+ Severity: Major
+ Number of Failed Records: 2
+Recorded Data: 
+ [{u'ids': u'a1be8348-5bc7-4425-9b63-6048168fee4c', u'name': u'Maid Imitate'}, {u'id': u'70bcb07a-be03-488f-a650-58b67be89b46', u'names': u'Noninterference Preventionist'}]
+
+Test Case 8: Author should have following keys: id, name not empty
+ Severity: Major
+ Number of Failed Records: 2
+Recorded Data: 
+ [{u'id': u'', u'name': u'Unbetrayed Amoebaea'}, {u'id': u'96b04a78-ca22-48f3-8719-f63eb07161ae', u'name': u''}]
+
+Test Case 9: There should be no duplicated author records with same id but different content
+ Severity: Minor
+ Number of Failed Records: 1
+Recorded Data: 
+ [{u'id': u'13badc7d-2270-4bbc-95d2-13b8fd71f419', u'name': u'Mesut Gunes'}]
+
+Test Case 10: There should be no duplicated author records with same id and same content
+ Severity: Minor
+ Number of Failed Records: 5
+Recorded Data: 
+ [{u'id': u'40bef034-33dd-4237-b702-6839c823d918', u'name': u'Procivic Kilovar'}, {u'id': u'736b91af-c367-4e26-a29b-1024764eee1e', u'name': u'Parodiable Furfurous'}, {u'id': u'8b11613c-cfe9-40d9-9c97-fb815bd3688c', u'name': u'Canthitis Acanthopteri'}, {u'id': u'dd90a829-3df6-4e2a-a458-a81aedb43ec5', u'name': u'Deutencephalic Cad'}, {u'id': u'e1bb8abb-9e42-473f-96fa-21e038dd1a41', u'name': u'Celidography Mumblebee'}]
+
+Test Case 11: Books should have a valid author
+ Severity: Major
+ Number of Failed Records: 2
+Recorded Data: 
+ [{u'author': u'52f137c5-80f7-4219-b288-20ab008e3317', u'id': u'0013d333-44c4-4af6-b054-e3bac4b906aa', u'name': u'Bae Mentalization'}, {u'author': u'1727bf59-3eef-40ec-a839-72b1eaf41782', u'id': u'00e0b39a-77f9-4de3-8ad0-216613d50c55', u'name': u'Alphatoluic Forgather'}]

@@ -1,0 +1,109 @@
+
+						...............
+						.							.
+						.		JSON			. 
+						.							.
+						...............
+									
+									||
+									\/
+
+						...............
+						.							.
+						.		KEY   		. 
+						.		NUMBER		.
+						...............
+									
+									||
+									\/
+
+						...............
+						.							.
+						.	KEY NAMES		. 
+						.		    			.
+						...............
+									
+									||
+									\/
+
+						...............
+						.							.
+						.	EMPTY KEYS	. 
+						.							.
+						...............
+									
+									||
+									\/
+
+						...............
+						.							.
+						.	MULTIPLE    .
+						. RECORD	    . 
+						.	SAME ID			.
+						...............
+									
+									||
+									\/
+
+						...............
+						.							.
+						.	MULTIPLE    .
+						. RECORD	    . 
+						.	EXACT MATCH	.
+						...............
+									
+									||
+									\/
+
+						...............
+						.	AUTHOR MATCH. 
+						.	   FROM     .        
+						. VALID LIST  . 
+						...............
+
+
+['Blocker', 'Source should be in JSON format'],
+	* This is a "Blocker" case. If it is not satisfied, we can not proceed other cases
+
+['Major', 'Books should have 3 keys'],
+	1. It can be 2 or less
+	2. It can be 4 or more
+
+['Major', 'Books should have following keys: author, id, name'],
+	1. no author
+	2. no id
+	3. no name
+
+['Major', 'Books should have following keys: author, id, name not empty'],
+	1. empty author
+	2. empty id
+	3. empty name
+
+['Minor', 'There should be no duplicated book records with same id but different content'],
+	1. same id, different author
+	2. same id, different name
+
+['Minor', 'There should be no duplicated book records with same id and same content'],
+	1. same id, same name, same author
+
+['Major', 'Author should have 2 keys'],
+	1. It can be 1
+	2. It can be 3 or more
+
+['Major', 'Author should have following keys: id, name'],
+	1. no id
+	2. no name
+
+['Major', 'Author should have following keys: id, name not empty'],
+	1. empty id
+	2. empt name
+
+['Minor', 'There should be no duplicated author records with same id but different content'],
+	1. same id, different name
+
+['Minor', 'There should be no duplicated author records with same id and same content'],
+	1. same id, same name
+
+['Major', 'Books should have a valid author'],
+	1. no author
+

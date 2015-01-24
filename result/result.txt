@@ -1,0 +1,67 @@
+
+
+Test Case 1: Books should have 3 keys
+ Severity: Major
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 2: Books should have following keys: author, id, name
+ Severity: Major
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 3: Books should have following keys: author, id, name not empty
+ Severity: Major
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 4: There should be no duplicated book records with same id but different content
+ Severity: Minor
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 5: There should be no duplicated book records with same id and same content
+ Severity: Minor
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 6: Author should have 2 keys
+ Severity: Major
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 7: Author should have following keys: id, name
+ Severity: Major
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 8: Author should have following keys: id, name not empty
+ Severity: Major
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 9: There should be no duplicated author records with same id but different content
+ Severity: Minor
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 10: There should be no duplicated author records with same id and same content
+ Severity: Minor
+ Number of Failed Records: 0
+Recorded Data: 
+ []
+
+Test Case 11: Books should have a valid author
+ Severity: Major
+ Number of Failed Records: 10
+Recorded Data: 
+ [{u'id': u'07540627-e14f-4b61-b19d-82074fea6ebd', u'name': u'Panorpian Unmeekness', u'author': u'a808dbcf-c511-499c-8b1c-f5bdb8f4a7a'}, {u'id': u'1703e127-28f0-4c0e-8fb8-d6d16a4e226e', u'name': u'Whilkut Noncommittally', u'author': u'f9308dd3-69cf-426a-b502-27d67d69c98'}, {u'id': u'3b2e7dfe-36a3-4e49-b30a-33612a802c56', u'name': u'Keratin Circumaxillary', u'author': u'8cffdb25-97ed-4e9e-bb46-8391ab12195'}, {u'id': u'40e2fafa-2efa-4681-babf-ff89492e948d', u'name': u'Sarcosepsis Reladen', u'author': u'2a7286fb-e5af-4ae1-a9d7-32a0be26c00'}, {u'id': u'7472d212-3216-4db4-b441-f680b15f5e5b', u'name': u'Farthingale Penciller', u'author': u'26157e69-b086-48f8-8723-dd7e6671b50'}, {u'id': u'a3be3c61-13b2-4044-b2a6-b52881a7084b', u'name': u'Casuarinaceae Sagination', u'author': u'504bf607-f71c-460f-912e-5b9b6a382b4'}, {u'id': u'e691dcce-3b48-4a2b-9291-1045ebdcec89', u'name': u'Arithmogram Saddlebow', u'author': u'38b1ccf3-b575-44e2-b3b5-7959af38b05'}, {u'id': u'ec11c503-353d-44cc-b262-6452b10da1f8', u'name': u'Quodlibet Eudora', u'author': u'4b59696e-4e16-4413-bac2-8fd21c86ddd'}, {u'id': u'eda2edd9-eec6-42db-bb7c-1ddffe63224d', u'name': u'Stoled Scientician', u'author': u'b2226270-9254-45a8-9c83-2ee81966c9b'}, {u'id': u'ee86bdc3-5ae1-47ba-8191-e47790efb000', u'name': u'Gradable Holophrase', u'author': u'05abdfaf-f203-424b-9aba-7cc5da24234'}]
