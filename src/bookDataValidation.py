@@ -8,7 +8,6 @@ class BookData():
         self.fr = open(fileName).read()
 
         self.filtered_by_keys_number_books = list()
-        self.inconsistant_keys_books = list()
         self.filtered_validated_books = list()
         self.filtered_validated_nonempty_books = list()
         self.filtered_validated_nonempty_unique_books = list()
@@ -16,7 +15,6 @@ class BookData():
         self.same_id_books = list()
 
         self.filtered_by_keys_number_authors = list()
-        self.inconsistant_keys_authors = list()
         self.filtered_validated_authors = list()
         self.filtered_validated_nonempty_authors = list()
         self.filtered_validated_nonempty_unique_authors = list()
