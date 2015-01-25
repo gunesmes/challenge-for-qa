@@ -9,7 +9,7 @@ python --version
 
 Clone the project:
 ```shell
-git clone https://github.com/gunesmes/subtitle_translator.git
+git clone https://github.com/gunesmes/challenge-for-qa.git
 ```
 
 * run python file
