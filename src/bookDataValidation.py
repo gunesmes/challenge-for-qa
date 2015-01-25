@@ -37,6 +37,7 @@ class BookData():
         books = self.data["books"] 
         failed = []
 
+        # we will remove the record which doesnt have 3 keys
         for book in books:
             if len(book) != 3:
                 failed.append(book)
@@ -47,11 +48,11 @@ class BookData():
 
     
     def validate_keys_book(self):
-        # we will remove the books which has invalid keys
         books = self.filtered_by_keys_number_books 
         keys = ["id", "name", "author"]
         failed = []
 
+        # we will remove the books which doesnt have pre-defined keys
         for book in books:
             if all(key in book for key in keys):
                 self.filtered_validated_books.append(book)
@@ -62,10 +63,10 @@ class BookData():
     
 
     def check_empty_keys_book(self):
-        # we will remove the books which has invalid keys
         books = self.filtered_validated_books
         failed = [] 
 
+        # we will remove the books which have empty key value
         for book in books:
             if all(len(book[key]) is not 0 for key in book):
                 self.filtered_validated_nonempty_books.append(book)
@@ -76,13 +77,13 @@ class BookData():
     
 
     def check_multiple_record_book(self):
-        # we will remove 
         books = self.filtered_validated_nonempty_books 
+        # sort the dict list by id value
         books = sorted(books, key=itemgetter("id"))
         self.filtered_validated_nonempty_unique_books = books
-
-
         i = 0
+
+        # books are ordered by id values so we can compare squential record
         while i < len(books)-1:
             id = books[i]["id"]
             name = books[i]["name"]
@@ -109,6 +110,7 @@ class BookData():
         authors = self.data["authors"] 
         failed = []
 
+        # we will remove the record which doesnt have 2 keys
         for author in authors:
             if len(author) != 2:
                 failed.append(author)
@@ -118,11 +120,11 @@ class BookData():
         testCase.result(6, failed)    
     
     def validate_keys_author(self):
-        # we will remove the books which has invalid keys
         authors = self.filtered_by_keys_number_authors 
         keys = ["id", "name"]
         failed = []
 
+        # we will remove the authors which doesnt have pre-defined keys
         for author in authors:
             if all(key in author for key in keys):
                 self.filtered_validated_authors.append(author)
@@ -133,10 +135,10 @@ class BookData():
 
         
     def check_empty_keys_author(self):
-        # we will remove the books which has invalid keys
         authors = self.filtered_validated_authors
         failed = [] 
 
+        # we will remove the authors which have empty key value
         for author in authors:
             if all(len(author[key]) is not 0 for key in author):
                 self.filtered_validated_nonempty_authors.append(author)
@@ -149,8 +151,9 @@ class BookData():
         authors = self.filtered_validated_nonempty_authors 
         authors = sorted(authors, key=itemgetter("id"))
         self.filtered_validated_nonempty_unique_authors = authors
-
         i = 0
+
+        # authors are ordered by id values so we can compare squential record
         while i < len(authors)-1:
             id = authors[i]["id"]
             name = authors[i]["name"]
@@ -172,21 +175,20 @@ class BookData():
         testCase.result(9, self.same_id_authors)
         testCase.result(10, self.same_record_authors)        
     
-        
     def check_author_of_book(self):
-        # we will use the books list which has 3 valid keys
         books = self.filtered_validated_nonempty_unique_books
         authors = self.filtered_validated_nonempty_unique_authors
 
-        for i in range(len(books)):
-            found = False
-            for author in authors:
-                if books[i]["author"] == author["id"]:
-                    self.valid_books.append(books[i])
-                    found = True
-                    break
-            if found == False:    
-                self.invalid_author_books.append(books[i])
+        # create a list composed of id of authors 
+        auth = []
+        for author in authors:
+            auth.append(author["id"])
+        
+        for book in books:
+            if book["author"] in auth:
+                self.valid_books.append(book)
+            else:
+                self.invalid_author_books.append(book)
 
         testCase.result(11, self.invalid_author_books)
 
